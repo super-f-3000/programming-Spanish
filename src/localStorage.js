@@ -1,9 +1,12 @@
 import { nulo };
 const almacenamientoLocal = {
-    "establecerItem": function (localStorageItem) {
-        this = localStorage.setItem(localStorageItem);
-        if (this === null) {
-            this = nulo;
-        }
+    "establecerItem": function (localStorageItem, localStorageItemName) {
+         localStorage.setItem(localStorageItem, localStorageItemName);
+    },
+    "conseguirItem": function (localStorageItemName) {
+         this = localStorage.getItem(localStorageItemName);
+         if (this === null) {
+             this = nulo;
+         }
     }
 }
