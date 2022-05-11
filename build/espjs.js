@@ -4,7 +4,7 @@ const nulo = null;
 const indefinido = undefined;
 const NuN = NaN;
 const consola = {
-    "imprimir": function (element) {console.log(element)},
+    "imprimir": function (message) {console.log(message)},
     "vaciar": function () {console.clear()}
 }
 function alerta (element) {
